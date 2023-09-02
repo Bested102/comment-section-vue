@@ -129,7 +129,7 @@ export default {
       this.user = this.mainData.currentUser
       this.comments = this.mainData.comments
     } else {
-      let req = await fetch('/src/data.json')
+      let req = await fetch('/src/assets/data.json')
       let res = await req.json()
       this.mainData = res
       this.user = this.mainData.currentUser
