@@ -1,6 +1,6 @@
 <template>
   <div class="new">
-    <img src="../assets/images/avatars/image-juliusomo.png" alt />
+    <img src="../assets/images/image-juliusomo.png"/>
     <textarea v-model="newComment" placeholder="Add a comment..."></textarea>
     <span class="add"  @click="submit">{{buttonText}}</span>
   </div>

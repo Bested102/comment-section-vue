@@ -28,7 +28,7 @@
     <div class="container">
       <div class="info">
         <div>
-          <img :src="c.user.image.png" alt class="avater" />
+          <img :src="avaterPath" alt class="avater" />
           <span class="name">{{ c.user.username }}</span>
           <span class="you" v-if="c.isUser">you</span>
           <span class="date">{{ c.createdAt }}</span>
@@ -65,7 +65,7 @@ export default {
   props: ["c", "commentsData", "index", "replyIndex"],
   data() {
     return {
-      showForm: false,
+      showForm: false
     }
   },
   methods: {
@@ -95,7 +95,11 @@ export default {
       this.$emit("edited", this.$refs.content.innerText, this.index, this.replyIndex)
     }
   },
-  updated() {
+  computed:{
+    avaterPath(){
+      return new URL(`/src/assets/images/${this.c.user.image.png}` ,import.meta.url).href
+    }
+  },  updated() {
     this.updateColors()
   },
   mounted() {
