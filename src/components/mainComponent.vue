@@ -55,7 +55,6 @@
     </div>
   </div>
   <MainForm v-if="showForm" buttonText="Reply" @add="handleAdd" />
-  
 </template>
 
 <script>

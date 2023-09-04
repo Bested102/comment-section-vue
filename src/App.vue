@@ -96,8 +96,8 @@ export default {
         "score": 0,
         "user": {
           "image": {
-            "png": "/src/assets/images/avatars/image-juliusomo.png",
-            "webp": "/src/assets/images/avatars/image-juliusomo.webp"
+            "png": "image-juliusomo.png",
+            "webp": "image-juliusomo.webp"
           },
           "username": "juliusomo"
         },
